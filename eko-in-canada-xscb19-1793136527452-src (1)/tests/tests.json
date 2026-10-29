@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Browse Eko in Kanada branding and full menu",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "Eko in Kanada branding",
+      "black orange white theme",
+      "full menu items"
+    ],
+    "description": "Verifies the updated brand name and menu from the catering flyer are presented on the home page.",
+    "steps": [
+      "Open the home page",
+      "Navigate to Our menu",
+      "Check rice, soups, proteins and specials"
+    ],
+    "expected": "The page uses Eko in Kanada branding and lists the menu items supplied in the flyer."
+  },
+  {
+    "name": "Find catering services and event types",
+    "viewport": "desktop",
+    "covers": [
+      "catering services",
+      "weddings",
+      "birthday parties",
+      "corporate events",
+      "anniversaries"
+    ],
+    "description": "Verifies catering services are promoted for the four event types listed in the flyer.",
+    "steps": [
+      "Open the home page",
+      "Navigate to the catering section",
+      "Review the listed event types"
+    ],
+    "expected": "Weddings, birthday parties, corporate events and anniversaries are listed, with a working WhatsApp enquiry link."
+  },
+  {
+    "name": "Use WhatsApp ordering on mobile",
+    "viewport": "mobile",
+    "covers": [
+      "responsive mobile layout",
+      "WhatsApp ordering",
+      "catering contact"
+    ],
+    "description": "Verifies visitors on a mobile screen can find the menu and contact the business.",
+    "steps": [
+      "Open the home page at mobile width",
+      "Scroll to the menu or catering section",
+      "Select the relevant WhatsApp link"
+    ],
+    "expected": "The menu remains readable on mobile and the contact link opens WhatsApp."
+  }
+]

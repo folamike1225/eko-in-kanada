@@ -1,0 +1,1340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f15a24" />
+    <meta
+      name="description"
+      content="Eko in Kanada offers Nigerian food, snacks, pastries and catering for events across Ontario, Canada."
+    />
+    <title>Eko in Kanada — Nigerian Food &amp; Catering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #f15a24;
+        --gold-light: #ff7a35;
+        --ink: #111111;
+        --green: #f15a24;
+        --cream: #ffffff;
+        --muted: #555555;
+        --line: #e5e5e5;
+        --white: #fff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--cream);
+        font-family: 'DM Sans', sans-serif;
+        line-height: 1.55;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .container {
+        width: min(1160px, calc(100% - 48px));
+        margin: auto;
+      }
+      .topline {
+        background: #111111;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 11px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      header {
+        background: rgba(255, 255, 255, 0.97);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        border-bottom: 1px solid rgba(30, 37, 28, 0.08);
+        backdrop-filter: blur(12px);
+      }
+      .nav {
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        color: #f15a24;
+        text-transform: uppercase;
+      }
+      .brand-mark {
+        width: 46px;
+        height: 46px;
+        border-radius: 10px;
+        background: #f15a24;
+        display: grid;
+        place-items: center;
+        color: #111111;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        border: 2px solid #111111;
+        box-shadow: 0 0 0 2px #f15a24;
+      }
+      .brand small {
+        display: block;
+        color: #111111;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        font-size: 9px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+      .links {
+        display: flex;
+        gap: 30px;
+        color: #555b52;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .links a:hover {
+        color: var(--green);
+      }
+      .nav-cta,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        background: var(--green);
+        color: #fff;
+        border-radius: 999px;
+        padding: 13px 21px;
+        font-size: 13px;
+        font-weight: 700;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+      .nav-cta:hover,
+      .button:hover {
+        background: #173b29;
+        transform: translateY(-2px);
+      }
+      .hero {
+        padding: 48px 0 76px;
+        background: linear-gradient(115deg, #111111 0%, #222222 62%, #f15a24 100%);
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.98fr;
+        align-items: center;
+        gap: 62px;
+      }
+      .eyebrow {
+        color: var(--green);
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .eyebrow:before {
+        content: '';
+        width: 28px;
+        height: 1px;
+        background: var(--gold);
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      h1 {
+        font-size: clamp(46px, 6vw, 76px);
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+        margin: 20px 0;
+      }
+      .hero h1 {
+        color: #ffffff !important;
+      }
+      .hero .eyebrow {
+        color: #ff7a35;
+      }
+      .gold {
+        color: #fff8dd;
+        font-style: italic;
+        text-shadow: 0 2px 12px #8b671b35;
+      }
+      .hero-copy {
+        max-width: 470px;        color: #ffffff !important;        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.85;
+        margin-bottom: 28px;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+      }
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .text-link {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--green);
+        border-bottom: 1px solid var(--green);
+        padding-bottom: 4px;
+      }
+      .hero-note {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #414638;
+        font-size: 12px;
+      }
+      .avatars {
+        display: flex;
+      }
+      .avatars i {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        border: 2px solid var(--cream);
+        margin-right: -8px;
+        background: linear-gradient(135deg, #d9a96a, #6d4025);
+      }
+      .avatars i:nth-child(2) {
+        background: linear-gradient(135deg, #efc778, #9a4d27);
+      }
+      .avatars i:nth-child(3) {
+        background: linear-gradient(135deg, #b9c47b, #315b36);
+      }
+      .hero-visual {
+        position: relative;
+        min-height: 510px;
+      }
+      .hero-photo {
+        position: absolute;
+        inset: 5px 18px 15px 35px;
+        width: calc(100% - 53px);
+        height: 490px;
+        border-radius: 46% 46% 24px 24px;
+        box-shadow: 0 28px 65px #3c2d1840;
+        border: 8px solid #fff9e8;
+      }
+      .photo-label {
+        position: absolute;
+        left: 0;
+        bottom: 54px;
+        background: var(--white);
+        border-radius: 15px;
+        padding: 15px 19px;
+        box-shadow: 0 12px 35px #2922171a;
+        font-size: 12px;
+      }
+      .photo-label strong {
+        display: block;
+        color: var(--green);
+        font-family: 'Playfair Display';
+        font-size: 17px;
+      }
+      .round-stamp {
+        position: absolute;
+        right: 0;
+        top: 32px;
+        background: var(--green);
+        color: #fff;
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-family: 'Playfair Display';
+        line-height: 1.2;
+        font-size: 14px;
+        transform: rotate(9deg);
+        box-shadow: 0 8px 24px #1c2e1d50;
+      }
+      .round-stamp span {
+        font-family: 'DM Sans';
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold-light);
+      }
+      .trust {
+        background: #fff;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .trust-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 0;
+        text-align: center;
+      }
+      .trust-item {
+        font-size: 12px;
+        color: #596055;
+      }
+      .trust-item + .trust-item {
+        border-left: 1px solid var(--line);
+      }
+      .trust-item b {
+        color: var(--green);
+        font-size: 13px;
+        margin-right: 6px;
+      }
+      section {
+        padding: 92px 0;
+      }
+      .section-head {
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto 42px;
+      }
+      .section-head .eyebrow {
+        justify-content: center;
+      }
+      .section-head h2 {
+        font-size: clamp(34px, 4vw, 48px);
+        line-height: 1.12;
+        margin: 15px 0;
+      }
+      .section-head p {
+        color: #333333;
+        font-size: 15px;
+        line-height: 1.85;
+        font-weight: 500;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .about-image-wrap {
+        position: relative;
+        padding: 0 20px 20px 0;
+      }
+      .about-image {
+        height: 430px;
+        border-radius: 8px 110px 8px 8px;
+      }
+      .about-image-wrap:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        width: 73%;
+        height: 70%;
+        border: 1px solid var(--gold);
+        border-radius: 8px 0 8px 8px;
+      }
+      .about-copy h2 {
+        font-size: 44px;
+        line-height: 1.12;
+        margin: 14px 0 20px;
+      }
+      .about-copy p {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.9;
+      }
+      .signature {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        color: var(--green);
+        font-size: 20px;
+        margin-top: 24px;
+      }
+      .signature small {
+        display: block;
+        font: 11px 'DM Sans';
+        color: var(--muted);
+        font-style: normal;
+        margin-top: 3px;
+      }
+      .menu-section {
+        background: #f4f4f4;
+      }
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+        gap: 22px;      }
+      .menu-card {        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px #3228110a;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+        border-top: 4px solid var(--gold);
+      }
+      .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 38px #32281118;
+      }
+      .menu-card img {
+        height: 220px;
+      }
+      .menu-card-body {
+        padding: 22px 23px 25px;
+      }
+      .card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .card-top h3 {
+        font-size: 22px;
+        margin: 0;
+      }
+      .number {
+        color: #bf941d;
+        font-size: 11px;
+        letter-spacing: 0.13em;
+      }
+      .menu-card p {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.75;
+        margin: 10px 0 18px;
+      }
+      .dish-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+      .dish-tags span {
+        background: #f8f3e5;
+        color: #5d614f;
+        border-radius: 50px;
+        padding: 6px 10px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .menu-footer {
+        text-align: center;
+        margin-top: 34px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .menu-footer .button {
+        margin-top: 10px;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      .why-card {
+        text-align: center;
+        padding: 25px 22px;
+      }
+      .icon-wrap {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #fff0e9;
+        color: var(--green);
+        display: grid;
+        place-items: center;
+        margin: 0 auto 17px;
+      }
+      .icon-wrap svg {
+        width: 26px;
+        height: 26px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.7;
+      }
+      .why-card h3 {
+        font-size: 21px;
+        margin-bottom: 8px;
+      }
+      .why-card p {
+        color: var(--muted);
+        font-size: 12px;
+        max-width: 250px;
+        margin: auto;
+        line-height: 1.8;
+      }
+      .cta-band {
+        padding: 0 0 90px;
+      }
+      .cta-box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 13px;
+        background: var(--green);
+        color: white;
+        padding: 52px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+      }
+      .cta-box:after {
+        content: 'EKO';
+        position: absolute;
+        font-family: 'Playfair Display';
+        font-size: 210px;
+        line-height: 1;
+        right: 22%;
+        bottom: -85px;
+        color: #ffffff0a;
+      }
+      .cta-copy {
+        position: relative;
+        z-index: 1;
+        max-width: 540px;
+      }
+      .cta-copy .eyebrow {
+        color: var(--gold-light);
+      }
+      .cta-copy h2 {
+        font-size: 38px;
+        margin: 12px 0;
+      }
+      .cta-copy p {
+        font-size: 13px;
+        color: #d5ded4;
+        margin: 0;
+      }
+      .button.gold-button {
+        background: var(--gold);
+        color: var(--ink);
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+      }
+      .button.gold-button:hover {
+        background: #f4ce55;
+      }
+      footer {
+        background: #171e18;
+        color: #fff;
+        padding: 48px 0 24px;
+      }
+      .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 35px;
+        padding-bottom: 35px;
+      }
+      .footer-brand {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+      }
+      .footer-brand small {
+        display: block;
+        font: 11px 'DM Sans';
+        color: #bdc5ba;
+        margin-top: 5px;
+      }
+      .footer-meta {
+        display: flex;
+        gap: 60px;
+      }
+      .footer-meta div {
+        font-size: 12px;
+        color: #c5cbc1;
+        line-height: 1.9;
+      }
+      .footer-meta strong {
+        display: block;
+        color: var(--gold-light);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        margin-bottom: 6px;
+      }
+      .copyright {
+        padding-top: 20px;
+        border-top: 1px solid #ffffff1c;
+        color: #92998f;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;      }
+      @media (max-width: 850px) {
+        .hero-grid {          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+        .hero-copy {
+          margin: 0 auto 28px;
+        }
+        .hero-actions {
+          justify-content: center;
+        }
+        .hero-note {
+          justify-content: center;
+        }
+        .hero-visual {
+          min-height: 400px;
+        }
+        .hero-photo {
+          height: 380px;
+          inset: 0 15px 12px;
+          width: calc(100% - 30px);
+          border-radius: 50% 50% 24px 24px;
+        }
+        .photo-label {
+          left: 10px;
+          bottom: 35px;
+        }
+        .round-stamp {
+          right: 10px;
+          top: 15px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+        .about-image-wrap {
+          padding: 0 10px 10px 0;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .about-image {
+          height: 380px;
+        }
+        .menu-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .why-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .cta-box {
+          flex-direction: column;
+          text-align: center;
+          gap: 30px;
+        }
+      }
+      @media (max-width: 650px) {
+        .container {
+          width: min(calc(100% - 36px), 500px);
+        }
+        .nav {
+          height: 68px;
+        }
+        .links {
+          display: none;
+        }
+        .nav-cta {
+          padding: 11px 15px;
+          font-size: 11px;
+        }
+        .brand {
+          font-size: 14px;
+        }
+        .hero {
+          padding: 38px 0 48px;
+        }
+        .hero-copy {
+          font-size: 15px;
+          line-height: 1.7;
+        }
+        .hero-visual {
+          min-height: 340px;
+          margin-top: 20px;
+        }
+        .hero-photo {
+          height: 320px;
+        }
+        .trust-row {
+          grid-template-columns: 1fr;
+          padding: 10px 0;
+        }
+        .trust-item {
+          padding: 12px;
+        }
+        .trust-item + .trust-item {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+        section {
+          padding: 66px 0;
+        }
+        .section-head {
+          margin-bottom: 30px;
+        }
+        .about-image {
+          height: 300px;
+        }
+        .about-copy h2 {
+          font-size: 37px;
+        }
+        .menu-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .menu-card {
+          display: flex;
+          flex-direction: column;
+        }
+        .menu-card img {
+          height: 220px;
+          width: 100%;
+        }
+        .menu-card-body {
+          padding: 20px;
+        }
+        .why-grid {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .cta-band {
+          padding-bottom: 65px;
+        }
+        .cta-box {
+          padding: 34px 25px;
+        }
+        .cta-copy h2 {
+          font-size: 32px;
+        }
+        .footer-main {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .footer-meta {
+          gap: 30px;
+          flex-wrap: wrap;
+        }
+        .copyright {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+        }
+      }
+
+      .priced-menu {
+        display: grid;
+        gap: 28px;
+        margin-top: 26px;
+      }
+      .priced-category {
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 28px rgba(17,17,17,.06);
+      }
+      .priced-category-head {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background: #111;
+        color: #fff;
+      }
+      .priced-category-head img {
+        height: 230px;
+        width: 100%;
+        order: -1;
+        object-position: center;
+      }
+      .priced-category-title {
+        padding: 20px 24px;
+        align-self: stretch;
+      }
+      .priced-category-title h3 {
+        color: #fff;
+        margin: 0 0 6px;
+        font-size: 28px;
+      }      .priced-category-title p {
+        color: #f7d6c8;
+        margin: 0;
+        font-size: 13px;      }
+      .priced-items {
+        padding: 10px 22px 18px;
+      }
+      .priced-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .priced-item:last-child { border-bottom: 0; }
+      .priced-item-name { font-weight: 700; font-size: 14px; }
+      .priced-item-note { display: block; color: #666; font-size: 12px; font-weight: 400; margin-top: 2px; }
+      .priced-item-action { display: flex; align-items: center; gap: 12px; }
+      .priced-item-price { white-space: nowrap; font-weight: 700; color: #111; }
+      .whatsapp-small {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: #168447;
+        color: #fff;
+        border-radius: 999px;
+        padding: 8px 11px;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .whatsapp-small:hover { background: #0f6535; }
+      .menu-currency-note {
+        font-size: 12px;
+        color: #555;
+        margin: 0 0 8px;
+      }
+      @media (max-width: 620px) {
+        .priced-category-head { display: flex; flex-direction: column; }
+        .priced-category-head img { height: 190px; order: -1; }
+        .priced-category-title { padding: 18px 20px; }
+        .priced-category-title h3 { font-size: 24px; }
+        .priced-items { padding: 8px 15px 14px; }
+        .priced-item { grid-template-columns: 1fr; gap: 8px; }
+        .priced-item-action { justify-content: space-between; }
+        .whatsapp-small { padding: 8px 10px; }
+      }
+
+      /* Flyer-inspired menu layout: match the original category order and food-photo sequence. */
+      .flyer-menu { display: grid; gap: 24px; }
+      .flyer-category { border: 1px solid #f1d4c9; border-radius: 16px; overflow: hidden; background: #fffaf7; }
+      .flyer-category-title { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 22px; background: #f15a24; color: #fff; }
+      .flyer-category-title h3 { margin: 0; color: #fff; font-size: clamp(22px, 3vw, 30px); text-transform: uppercase; }
+      .flyer-category-title span { font-size: 12px; font-weight: 700; white-space: nowrap; }
+      .flyer-items { display: grid; gap: 0; padding: 16px; }
+      .rice-items { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .protein-items { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .soup-items { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+      .flyer-item { min-width: 0; padding: 0 12px 8px; border-right: 1px solid #f0c8b8; }
+      .flyer-item:last-child { border-right: 0; }
+      .flyer-item img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        height: auto;
+        max-height: 190px;
+        border-radius: 10px;
+        object-fit: contain;
+        object-position: center;
+        background: #fff;
+        border: 1px solid #eee4de;
+        padding: 4px;
+        margin-bottom: 12px;
+      }
+      /* Warm wood-grain photo frame for every Soups & Sauces image. */
+      .soup-items .flyer-item img {
+        background-color: #9b6338;
+        background-image: repeating-linear-gradient(2deg, transparent 0 7px, rgba(70, 35, 13, 0.24) 8px, transparent 10px 17px), linear-gradient(90deg, #754321, #c18a55 18%, #9b6338 42%, #d0a06a 68%, #80502d);
+        border: 0;
+        padding: 0;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+        box-shadow: 0 3px 8px rgba(72, 39, 18, 0.22);
+      }
+      .flyer-item h4 { margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid #e9b5a0; color: #d9471b; text-align: center; font-size: 16px; line-height: 1.25; }
+      .rice-item h4 { margin-top: 4px; }
+      .flyer-prices { display: grid; gap: 8px; }
+      .flyer-price-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 4px 8px; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f2dfd7; font-size: 12px; }
+      .flyer-price-row:last-child { border-bottom: 0; }
+      .flyer-price-row strong { color: #d9471b; white-space: nowrap; font-size: 14px; }
+      .flyer-price-row .whatsapp-small { grid-column: 1 / -1; justify-self: stretch; padding: 7px 8px; text-align: center; }
+      @media (max-width: 900px) {
+        .protein-items { grid-template-columns: repeat(2, minmax(0,1fr)); }
+        .soup-items { grid-template-columns: repeat(3, minmax(0,1fr)); }
+        .flyer-item:nth-child(2n) { border-right: 0; }
+        .flyer-item { padding: 0 10px 14px; }
+      }
+      @media (max-width: 620px) {
+        .flyer-items, .rice-items, .protein-items, .soup-items { grid-template-columns: repeat(2, minmax(0,1fr)); padding: 12px; }
+        .flyer-item { padding: 0 8px 14px; }
+        .flyer-item:nth-child(odd) { border-right: 1px solid #f0c8b8; }
+        .flyer-item:nth-child(even) { border-right: 0; }
+        .flyer-item img { max-height: 150px; }
+        .flyer-category-title { padding: 12px 15px; }
+        .flyer-category-title h3 { font-size: 20px; }
+        .flyer-category-title span { font-size: 10px; }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="topline">
+      QUALITY CATERING SERVICES FOR WEDDINGS, BIRTHDAYS, CORPORATE EVENTS & ANNIVERSARIES
+    </div>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#top"
+          ><span class="brand-mark">E</span
+          ><span
+            >EKO <small>IN KANADA · AUTHENTIC NIGERIAN FLAVOURS</small></span
+          ></a
+        >
+        <nav class="links" aria-label="Main navigation">
+          <a href="#about">Our story</a><a href="#menu">Menu</a
+          ><a href="#why">Why Eko</a><a href="#contact">Contact</a>
+        </nav>
+        <a
+          class="nav-cta"
+          href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada!%20I%27d%20love%20to%20place%20an%20order."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Order on WhatsApp <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">A taste of home, made with heart</div>
+            <h1>
+              Authentic Lagos<br />flavours, <span class="gold">made for</span
+              ><br />every occasion.
+            </h1>
+            <p class="hero-copy">
+              From smoky party jollof and beloved Nigerian classics to event catering, we prepare food for everyday enjoyment and special occasions.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button"
+                href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada!%20I%27d%20love%20to%20place%20an%20order."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Order now <span>↗</span></a
+              ><a class="text-link" href="#menu">Explore our menu ↓</a>
+            </div>
+            <div class="hero-note">
+              <span class="avatars" aria-hidden="true"
+                ><i></i><i></i><i></i></span
+              ><span
+                >Nigerian food and catering for every occasion</span
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img
+              class="hero-photo"
+              src="https://www.mealbake.com/media/recipes/authentic-nigerian-jollof-rice-with-roasted-chicken-699/authentic-nigerian-jollof-rice-with-roasted-chicken.webp"
+              alt="Nigerian jollof rice with roasted chicken and fried plantain"
+              loading="eager"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://www.nairaland.com/attachments/5243206_nigeriajollofrice_jpeg1b6fc335e579943358f2ce9b3c501675';
+              "
+            />
+            <div class="round-stamp">
+              Lagos soul<br /><span>Ontario made</span>
+            </div>
+            <div class="photo-label">
+              <strong>Jollof worth coming home for</strong>Smoky, rich, and made
+              with love
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="trust">
+        <div class="container trust-row">
+          <div class="trust-item"><b>✦</b> Lagos-inspired recipes</div>
+          <div class="trust-item"><b>✦</b> Freshly made to order</div>
+          <div class="trust-item"><b>✦</b> Catering for special events</div>
+        </div>
+      </div>
+      <section id="about">
+        <div class="container about-grid">
+          <div class="about-image-wrap">
+            <img
+              class="about-image"
+              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85"
+              alt="A welcoming home kitchen where food is prepared with care"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-copy">
+            <div class="eyebrow">Our story</div>
+            <h2>A little piece of Lagos, made for sharing.</h2>
+            <p>
+              Eko in Kanada was born from a simple feeling: the joy of a meal
+              that takes you home. Founded by Bolarinwa Pearl Aina, we bring the
+              generous spirit and unmistakable flavour of Lagos to tables across
+              Ontario.
+            </p>
+            <p>
+              Every dish is prepared with care, using beloved Nigerian recipes
+              and quality ingredients. Whether you’re celebrating with family or
+              missing the taste of home, there’s always a seat at our table.
+            </p>
+            <div class="signature">
+              Bolarinwa Pearl Aina<small>Founder, Eko in Kanada</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section" id="menu">        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Made to make you smile</div>
+            <h2>Good food. Great memories.</h2>
+            <p>
+              Explore the comfort-food classics and continental favourites we
+              make fresh for your table.
+            </p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <img
+                src="https://www.mealbake.com/media/recipes/authentic-nigerian-jollof-rice-with-roasted-chicken-699/authentic-nigerian-jollof-rice-with-roasted-chicken.webp"
+                alt="Nigerian jollof rice with chicken and golden fried plantain"
+                loading="lazy"
+              />
+              <div class="menu-card-body">
+                <div class="card-top">
+                  <h3>Jollof &amp; rice</h3>
+                  <span class="number">01</span>
+                </div>
+                <p>
+                  The Nigerian party classic: smoky, tomato-rich rice with
+                  delicious sides.
+                </p>
+                <div class="dish-tags">
+                  <span>Jollof rice</span><span>Fried rice</span
+                  ><span>Stir-fry spaghetti</span><span>Plantain</span>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card">
+              <img
+                src="https://img-global.cpcdn.com/recipes/049779667d1d3d73/680x781cq80/egusi-soup-recipe-main-photo.jpg"                alt="Nigerian egusi soup served with pounded yam"
+                loading="lazy"
+              />
+              <div class="menu-card-body">
+                <div class="card-top">
+                  <h3>Swallow &amp; soups</h3>
+                  <span class="number">02</span>
+                </div>
+                <p>
+                  Comforting, deeply flavoured soups made for scooping and
+                  sharing.
+                </p>
+                <div class="dish-tags">
+                  <span>Egusi</span><span>Vegetable soup</span
+                  ><span>Ogbono</span><span>Pounded yam &amp; fufu</span>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card">
+              <img
+                src="https://cdn.foodshot.ai/cdn-cgi/image/width%3D640%2Cquality%3D75%2Cformat%3Dauto%2Cfit%3Dscale-down/landing/use-cases/nigerian-food-photography/card-5.webp"
+                alt="Golden Nigerian small chops including puff puff, meat pies, and chin chin"
+                loading="lazy"
+              />
+              <div class="menu-card-body">
+                <div class="card-top">
+                  <h3>Snacks &amp; pastries</h3>
+                  <span class="number">03</span>
+                </div>
+                <p>
+                  Golden, flaky, crunchy and soft-baked favourites, perfect for
+                  sharing.
+                </p>
+                <div class="dish-tags">
+                  <span>Chin chin</span><span>Puff puff</span
+                  ><span>Meat pie</span><span>Sausage rolls</span>
+                </div>
+              </div>
+            </article>
+            <article class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85"
+                alt="Fresh continental meal with colourful vegetables"
+                loading="lazy"
+              />
+              <div class="menu-card-body">
+                <div class="card-top">
+                  <h3>Continental</h3>
+                  <span class="number">04</span>
+                </div>
+                <p>
+                  Global favourites and fresh sides for every gathering and
+                  celebration.
+                </p>
+                <div class="dish-tags">
+                  <span>Grilled chicken</span><span>Fresh salads</span
+                  ><span>Party trays</span><span>Seasonal specials</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="menu-footer">
+            Hungry for something special?<br /><a
+              class="button"
+              href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada!%20Can%20I%20see%20your%20full%20menu%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ask for our full menu <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="catering" class="menu-section">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">More than everyday meals</div>
+            <h2>Catering for your special moments.</h2>
+            <p>Let Eko in Kanada bring generous Nigerian flavours to weddings, birthday parties, corporate events and anniversaries. Contact us to discuss your guest count, menu and event date.</p>
+          </div>
+          <div class="why-grid">
+            <article class="why-card"><div class="icon-wrap">♡</div><h3>Weddings</h3><p>Make your celebration memorable with crowd-pleasing Nigerian dishes.</p></article>
+            <article class="why-card"><div class="icon-wrap">✦</div><h3>Birthday parties</h3><p>Share favourite meals, snacks and party trays with your guests.</p></article>
+            <article class="why-card"><div class="icon-wrap">▣</div><h3>Corporate events</h3><p>Arrange catering for meetings, staff gatherings and business occasions.</p></article>
+            <article class="why-card"><div class="icon-wrap">♡</div><h3>Anniversaries</h3><p>Celebrate your milestone with food prepared with care.</p></article>
+          </div>
+          <div class="menu-footer"><a class="button" href="https://wa.me/12898309250?text=Hello%20Eko%20in%20Kanada%2C%20I%27d%20like%20to%20ask%20about%20catering%20for%20an%20event." target="_blank" rel="noopener noreferrer">Ask about catering ↗</a></div>
+
+          <div class="section-head" style="margin-top:54px">
+            <div class="eyebrow">Our Menu · Prices in CAD</div>
+            <h2>Order your Nigerian favourites.</h2>
+            <p>Choose your food, portion size and price below. Tap the WhatsApp button beside any item to start an order with the details pre-filled.</p>
+          </div>
+          <p class="menu-currency-note">All prices are in Canadian dollars (CAD). Please confirm availability when ordering.</p>
+          <div class="priced-menu flyer-menu">
+            <article class="priced-category flyer-category">
+              <div class="flyer-category-title"><h3>Rice</h3><span>Prices in CAD</span></div>
+              <div class="flyer-items rice-items">
+              <article class="flyer-item rice-item">
+                <h4>Coolers</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Jollof Rice</span><strong>$250 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Cooler%20of%20Jollof%20Rice%20for%20%24250%20CAD." target="_blank" rel="noopener noreferrer">Order Jollof Rice</a></div><div class="flyer-price-row"><span>Fried Rice</span><strong>$280 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Cooler%20of%20Fried%20Rice%20for%20%24280%20CAD." target="_blank" rel="noopener noreferrer">Order Fried Rice</a></div></div>
+              </article>
+              
+              <article class="flyer-item ">
+                <img src="/resources/flyer-rice.jpg" alt="Jollof rice from the menu flyer" loading="lazy" />
+                <h4>Jollof Rice</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$150 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Jollof%20Rice%20(Large)%20for%20%24150%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$75 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Jollof%20Rice%20(Medium)%20for%20%2475%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$50 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Jollof%20Rice%20(Small)%20for%20%2450%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              
+              <article class="flyer-item ">
+                <h4>Fried Rice</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$180 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Fried%20Rice%20(Large)%20for%20%24180%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$120 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Fried%20Rice%20(Medium)%20for%20%24120%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$70 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Fried%20Rice%20(Small)%20for%20%2470%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              </div>
+            </article>
+            <article class="priced-category flyer-category">
+              <div class="flyer-category-title"><h3>Protein Trays</h3><span>Prices in CAD</span></div>
+              <div class="flyer-items protein-items">
+              <article class="flyer-item ">
+                <img src="/resources/flyer-chicken.jpg" alt="Chicken tray" loading="lazy" />
+                <h4>Chicken</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$180 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Chicken%20(Large)%20for%20%24180%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$120 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Chicken%20(Medium)%20for%20%24120%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$70 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Chicken%20(Small)%20for%20%2470%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-turkey.jpg" alt="Pepper-sauced turkey tray" loading="lazy" />
+                <h4>Pepper-Sauced Turkey</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$200 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Turkey%20(Large)%20for%20%24200%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$170 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Turkey%20(Medium)%20for%20%24170%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$90 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Turkey%20(Small)%20for%20%2490%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-fish.jpg" alt="Pepper-sauced fish tray" loading="lazy" />
+                <h4>Pepper-Sauced Fish</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$280 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Fish%20(Large)%20for%20%24280%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$220 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Fish%20(Medium)%20for%20%24220%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$150 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Pepper-Sauced%20Fish%20(Small)%20for%20%24150%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-goat-meat.jpg" alt="Peppered goat meat tray" loading="lazy" />
+                <h4>Peppered Goat Meat</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>Large tray</span><strong>$360 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Peppered%20Goat%20Meat%20(Large)%20for%20%24360%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Medium tray</span><strong>$280 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Peppered%20Goat%20Meat%20(Medium)%20for%20%24280%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>Small tray</span><strong>$220 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Peppered%20Goat%20Meat%20(Small)%20for%20%24220%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              </div>
+            </article>
+            <article class="priced-category flyer-category">
+              <div class="flyer-category-title"><h3>Soups &amp; Sauces</h3><span>Prices in CAD</span></div>
+              <div class="flyer-items soup-items">
+              <article class="flyer-item ">
+                <img src="/resources/flyer-efo-riro.jpg" alt="Efo Riro soup" loading="lazy" />
+                <h4>Efo Riro</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>3.5 L</span><strong>$150 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Efo%20Riro%20(3.5%20L)%20for%20%24150%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>7 L</span><strong>$250 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Efo%20Riro%20(7%20L)%20for%20%24250%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-egusi.jpg" alt="Egusi soup" loading="lazy" />
+                <h4>Egusi</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>3.5 L</span><strong>$160 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Egusi%20(3.5%20L)%20for%20%24160%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-ofada-sauce.jpg" alt="Ofada sauce" loading="lazy" />
+                <h4>Ofada Sauce</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>3.5 L</span><strong>$180 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Ofada%20Sauce%20(3.5%20L)%20for%20%24180%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>7 L</span><strong>$300 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Ofada%20Sauce%20(7%20L)%20for%20%24300%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-goat-pepper-soup.jpg" alt="Goat meat pepper soup" loading="lazy" />
+                <h4>Goat Meat Pepper Soup</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>3.5 L</span><strong>$150 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Goat%20Meat%20Pepper%20Soup%20(3.5%20L)%20for%20%24150%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div><div class="flyer-price-row"><span>7 L</span><strong>$250 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Goat%20Meat%20Pepper%20Soup%20(7%20L)%20for%20%24250%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>
+              </article>
+              <article class="flyer-item ">
+                <img src="/resources/flyer-ewa-agoyin-sauce.jpg" alt="Ewa Agoyin sauce" loading="lazy" />
+                <h4>Ewa Agoyin Sauce</h4>
+                <div class="flyer-prices"><div class="flyer-price-row"><span>3.5 L</span><strong>$150 CAD</strong><a class="whatsapp-small" href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada%2C%20I%20would%20like%20to%20order%20Ewa%20Agoyin%20Sauce%20(3.5%20L)%20for%20%24150%20CAD." target="_blank" rel="noopener noreferrer">Order</a></div></div>              </article>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+      <section id="why">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">The Eko difference</div>
+            <h2>Made with care, served with pride.</h2>
+            <p>
+              Every order carries a little more than great food. It carries the
+              warmth of home.
+            </p>
+          </div>
+          <div class="why-grid">
+            <article class="why-card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 21s-8-4.8-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.2-8 11-8 11Z"
+                  />
+                  <path d="M8.5 12h2l1.2-2.5 1.7 5 1.2-2.5h1" />
+                </svg>
+              </div>
+              <h3>Authentic taste</h3>
+              <p>
+                Beloved Nigerian recipes and the unmistakable flavours that
+                bring you back home.
+              </p>
+            </article>
+            <article class="why-card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3v3m0 12v3M4.2 6l2.1 2.1m11.4 7.8 2.1 2.1M3 12h3m12 0h3M4.2 18l2.1-2.1m11.4-7.8L19.8 6"
+                  />
+                  <circle cx="12" cy="12" r="5" />
+                </svg>
+              </div>
+              <h3>Freshly made</h3>
+              <p>
+                Prepared with care for your order, so every bite arrives full of
+                life and flavour.
+              </p>
+            </article>
+            <article class="why-card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"
+                  />
+                </svg>              </div>
+              <h3>Premium quality</h3>
+              <p>
+                Thoughtful ingredients and generous portions, with quality in
+                every detail.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="cta-band" id="contact">
+        <div class="container">
+          <div class="cta-box">
+            <div class="cta-copy">
+              <div class="eyebrow">Your table is waiting</div>
+              <h2>Let’s make something delicious.</h2>
+              <p>
+                Reach out to place an order, ask about today’s menu, or plan
+                something special.
+              </p>
+            </div>
+            <a
+              class="button gold-button"
+              href="https://wa.me/13653385540?text=Hi%20Eko%20in%20Kanada!%20I%27d%20love%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Chat on WhatsApp <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            Eko in Kanada<small
+              >Nigerian food &amp; catering across Ontario.</small>
+          </div>
+          <div class="footer-meta">
+            <div>
+              <strong>Say hello</strong
+              ><a href="tel:+13653385540">+1 (365) 338-5540</a><br /><a
+                href="https://wa.me/13653385540"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Chat on WhatsApp ↗</a
+              >
+            </div>
+            <div>
+              <strong>Find us</strong>Ontario, Canada<br />Food orders &amp; event catering
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <span
+            >© 2026 Eko in Kanada. Nigerian food and catering.</span
+          ><span>Food orders · Weddings · Birthdays · Corporate events</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Keep in-page navigation accessible on smaller screens and mark external ordering links safely.
+      document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      });
+    </script>
+  </body>
+</html>
